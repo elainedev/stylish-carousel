@@ -25,14 +25,22 @@
 
     &.carousel {
       padding-left: 0;
+
+      @media (max-width: 1024px) {
+        min-width: 512px;
+      }
+    
+      @media (max-width: 480px) {
+        min-width: 100vw;
+      }
     }
 
     @media (max-width: 1024px) {
-      padding: 30px;
+      padding: 30px 10px;
     }
   
     @media (max-width: 480px) {
-      padding: 15px;
+      padding: 15px 10px;
     }
   }
 }
